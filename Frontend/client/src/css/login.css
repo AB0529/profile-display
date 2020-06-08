@@ -1,0 +1,22 @@
+.LoginInner {
+    margin: 0 auto;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginOuter {
+    position: relative;
+
+}
+
+.LoginTitle {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.LoginCard {
+    background-color: rgba(0, 255, 255, 0.164);
+}

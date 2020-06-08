@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'PixelarRegularW01-Regular';
+	src: url('https://db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.eot'); /* IE9*/
+	src: url('https://db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.eot?#iefix') format('embedded-opentype'),
+		url('https://db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.woff2') format('woff2'),
+		url('https://db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.woff') format('woff'),
+		url('https://db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.ttf') format('truetype'),
+		url('https://db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.svg#PixelarRegularW01-Regular')
+			format('svg'); /* iOS 4.1- */
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Cat background */
+
+.page_404_body {
+	font-family: 'PixelarRegularW01-Regular';
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url('https://media.giphy.com/media/c01Cu1ZSjCUtq/giphy.gif');
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+/* Not found text */
+
+.bottom_text {
+	text-align: center;
+	color: gray;
+	position: relative;
+	bottom: 150px;
+}
+
+/* Not Found 404 */
+
+.not_found {
+	color: #fff;
+	font-size: 8em;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1),
+		0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2),
+		0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.not_found {
+	text-align: center;
+}
