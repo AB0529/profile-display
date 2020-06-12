@@ -55,37 +55,36 @@ class Register extends React.Component<IProps, IState> {
 
     render() {
         return (
-            <div>
-                <Card className="center" interactive={true} elevation={Elevation.TWO}>
-                    <div className="register-title">
-                        <h1>Register User</h1>
-                        {
-                            this.state.response.error ? (
-                                <h3>
-                                <li>
-                                    <a style={{color: "red"}}>
-                                        {this.state.response.error?.error}
-                                    </a>
-                                </li>
-                            </h3>
-                            ) : null
-                        }
-                    </div> 
-
-                    <FormGroup  className="bp3-inline bp3-intent-primary" labelFor="text-input">
-                        <form onSubmit={this.handle_submit}>
-                            <Icon icon="mugshot" /> Name
-                            <InputGroup id="text-input" placeholder="Ben Dover" type="name" intent={this.state.response.error?.type === "name" ? "danger" : "none"} />
-                            <Icon icon="user" /> Username
-                            <InputGroup id="text-input" placeholder="Username" type="username" intent={this.state.response.error?.type === "username" ? "danger" : "none"}/>
-                            <Icon icon="lock" /> Password
-                            <InputGroup id="text-input" placeholder="********" type="password" intent={this.state.response.error?.type === "password" ? "danger" : "none"}/>
-                            <Icon icon="envelope" /> Email
-                            <InputGroup id="text-input" placeholder="email@example.com" type="email" intent={this.state.response.error?.type === "email" ? "danger" : "none"}/>
-                            <Button className="register-button" alignText="center" icon="arrow-right" type="submit">Register</Button>
-                        </form>
-                    </FormGroup>
-                </Card>
+            <div className="outer">
+                <div className="register-inner">
+                    <Card className="register-card" interactive={true} elevation={Elevation.TWO}>
+                        <FormGroup  className="bp3-inline bp3-intent-primary" labelFor="text-input">
+                            <h1 className="register-title">Register User</h1>
+                            <form onSubmit={this.handle_submit}>
+                                <Icon icon="mugshot" /> Name
+                                <InputGroup className="pad-down" id="text-input" placeholder="Ben Dover" type="name" intent={this.state.response.error?.type === "name" ? "danger" : "none"} />
+                                <Icon icon="user" /> Username
+                                <InputGroup className="pad-down" id="text-input" placeholder="Username" type="username" intent={this.state.response.error?.type === "username" ? "danger" : "none"}/>
+                                <Icon icon="lock" /> Password
+                                <InputGroup className="pad-down" id="text-input" placeholder="********" type="password" intent={this.state.response.error?.type === "password" ? "danger" : "none"}/>
+                                <Icon icon="envelope" /> Email
+                                <InputGroup className="pad-down" id="text-input" placeholder="email@example.com" type="email" intent={this.state.response.error?.type === "email" ? "danger" : "none"}/>
+                                {
+                                    this.state.response.error ? (
+                                        <h3>
+                                        <li>
+                                            <a style={{color: "red"}}>
+                                                {this.state.response.error?.error}
+                                            </a>
+                                        </li>
+                                    </h3>
+                                    ) : null
+                                }
+                                <Button className="register-button" alignText="center" icon="arrow-right" type="submit">Register</Button>
+                            </form>
+                        </FormGroup>
+                    </Card>
+                </div>
             </div>
 
         );
