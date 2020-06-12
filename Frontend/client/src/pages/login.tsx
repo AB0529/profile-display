@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Card, Elevation, FormGroup, InputGroup } from '@blueprintjs/core';
-import "../css/reset.css"
 import "../css/main.css"
 import "../css/login.css"
 
