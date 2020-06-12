@@ -31,7 +31,7 @@ class DarkModeButton extends React.Component<IProps, IState> {
                 </AnchorButton>
                 {this.state.dark_mode ? (
                     <Helmet>
-                        <style>{'body {background-color: #293742; color: white}'}</style>
+                        <style>{'body {background-color: #293742; color: white}; nav-color: #293742'}</style>
                     </Helmet>
                 ) : null}
             </div>   
