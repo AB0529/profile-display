@@ -57,7 +57,7 @@ class Register extends React.Component<IProps, IState> {
         return (
             <div className="outer">
                 <div className="register-inner">
-                    <Card className="register-card" interactive={true} elevation={Elevation.TWO}>
+                    <Card className="register-card dark-mode" interactive={true} elevation={Elevation.TWO}>
                         <FormGroup  className="bp3-inline bp3-intent-primary" labelFor="text-input">
                             <h1 className="register-title">Register User</h1>
                             <form onSubmit={this.handle_submit}>

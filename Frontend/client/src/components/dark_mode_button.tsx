@@ -24,6 +24,10 @@ class DarkModeButton extends React.Component<IProps, IState> {
     }
 
     render() {
+        const body_dark_color = '#293742';
+        const nav_bar_dark_color = '#293742';
+        const everything_else_dark_color = '#2b4a5e';
+
         return (
             <div className={this.state.dark_mode ? 'bp3-dark' : 'bp3-light'}>
                 <AnchorButton className="floating-button" icon={this.state.dark_mode ? 'flash' : 'moon'} onClick={this.toggle_dark_mode}>
@@ -31,7 +35,7 @@ class DarkModeButton extends React.Component<IProps, IState> {
                 </AnchorButton>
                 {this.state.dark_mode ? (
                     <Helmet>
-                        <style>{'body {background-color: #293742; color: white} .nav-color {background-color: #3a4f5e; color: white}'}</style>
+                        <style>{`body {background-color: ${body_dark_color}; color: white} .nav-color {background-color: ${nav_bar_dark_color}; color: white} .dark-mode {background-color: ${everything_else_dark_color}; color: white}`}</style>
                     </Helmet>
                 ) : null}
             </div>   
