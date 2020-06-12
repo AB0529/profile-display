@@ -1,10 +1,29 @@
 .register-title {
-    position: fixed;
+    padding: 0% 7%;
+    /* position: fixed;
     left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
+    top: 28%;
+    transform: translate(-50%, -50%); */
 }
 
 .register-button {
     margin: 15%;
+}
+
+.register-card {
+    padding: 15%;
+    margin-top: 10%;
+}
+
+.register-inner {
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad-down {
+    padding-bottom: 1rem;
 }
