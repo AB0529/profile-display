@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Elevation, FormGroup, InputGroup } from '@blueprintjs/core';
+import { Button, Icon, Card, Elevation, FormGroup, InputGroup } from '@blueprintjs/core';
 import "../css/main.css"
 import "../css/login.css"
 
@@ -17,15 +17,14 @@ export default function Login() {
           <h2 className="LoginTitle"> Login Page </h2>
               
             <FormGroup 
-              helperText="Helper text with details..."
+              helperText=""
               label=""
               labelFor="text-input"
               labelInfo="(required)"
-              >
-              Username
-              <InputGroup id="text-input" placeholder="Placeholder text" />
-              Password
-              <InputGroup type="password" id="text-input" placeholder="Placeholder text" />
+              ><Icon icon="log-in" /> Username
+              <InputGroup id="text-input" placeholder="Einstein42" />
+              <Icon icon="key" /> Password
+              <InputGroup type="password" id="text-input" placeholder="Password" />
             </FormGroup>   
             
             <Button>Submit</Button>
