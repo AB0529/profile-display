@@ -11,17 +11,17 @@ export default function Login() {
       <DarkModeButton />
         <div className="LoginInner">
           <Card className="LoginCard"  interactive={true} elevation={Elevation.TWO}>
-            <h2 className="LoginTitle"> Login Page </h2>
+            <h2 className="LoginTitle"> <Icon icon="log-in" /> Login Page </h2>
                 
               <FormGroup 
                 helperText=""
                 label=""
                 labelFor="text-input"
                 labelInfo="(required)"
-                ><Icon icon="log-in" /> Username
-                <InputGroup id="text-input" placeholder="Einstein42" />
-                <Icon icon="key" /> Password
-                <InputGroup type="password" id="text-input" placeholder="Password" />
+                ><Icon icon="user" /> Username
+                <InputGroup id="text-input" className="pad-down" placeholder="Einstein42" />
+                <Icon icon="lock" /> Password
+                <InputGroup type="password" id="text-input" className="pad-down" placeholder="Password" />
               </FormGroup>   
               
               <Button>Submit</Button>
