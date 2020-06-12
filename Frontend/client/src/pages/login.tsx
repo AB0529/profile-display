@@ -7,7 +7,7 @@ export default function Login() {
   return (
     <div className="LoginOuter">
         <div className="LoginInner">
-          <Card className="LoginCard"  interactive={true} elevation={Elevation.TWO}>
+          <Card className="LoginCard dark-mode"  interactive={true} elevation={Elevation.TWO}>
             <h2 className="LoginTitle"> Login Page </h2>
                 
               <FormGroup 
