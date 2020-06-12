@@ -3,14 +3,12 @@ import { Button, Icon, Card, Elevation, FormGroup, InputGroup } from '@blueprint
 import "../css/main.css"
 import "../css/login.css"
 
-import DarkModeButton from '../components/dark_mode_button';
-
 export default function Login() {
   return (
     <div className="LoginOuter">
         <div className="LoginInner">
           <Card className="LoginCard"  interactive={true} elevation={Elevation.TWO}>
-            <h2 className="LoginTitle"> <Icon icon="log-in" /> Login Page </h2>
+            <h2 className="LoginTitle"> Login Page </h2>
                 
               <FormGroup 
                 helperText=""
