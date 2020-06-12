@@ -25,7 +25,7 @@ class DarkModeButton extends React.Component<IProps, IState> {
 
     render() {
         const body_dark_color = '#293742';
-        const nav_bar_dark_color = '#293742';
+        const nav_bar_dark_color = '#374a59';
         const everything_else_dark_color = '#2b4a5e';
 
         return (
