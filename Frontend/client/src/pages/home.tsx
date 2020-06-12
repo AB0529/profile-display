@@ -9,7 +9,7 @@ export default function Login() {
       <React.Fragment>
             <DarkModeButton />
             <h1 className="center">
-                Hello nigga
+                Hello
             </h1>
       </React.Fragment>      
   );

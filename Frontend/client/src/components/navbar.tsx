@@ -8,12 +8,12 @@ export default function nav() {
         <Navbar.Group align={Alignment.LEFT}>
             <Navbar.Heading>Blueprint</Navbar.Heading>
             <Navbar.Divider />
-            <Link to={`/`} className="bp3-minimal"> <Button className="bp3-minimal" icon="home" text="Home" /> </Link> 
-            <Link to={`/stuff`} className="bp3-minimal"> <Button className="bp3-minimal" icon="document" text="Files" /> </Link> 
+            <Link to={`/`}> <Button className="bp3-minimal" icon="home" text="Home" /> </Link> 
+            <Link to={`/stuff`}> <Button className="bp3-minimal" icon="document" text="Files" /> </Link> 
 
             <div className="right">
-              <Link to={`/login`} className="bp3-minimal"> <Button className="bp3-minimal" icon="user" text="Login"/> </Link> 
-              <Link to={`/register`} className="bp3-minimal"> <Button className="bp3-minimal" icon="id-number" text="Register"/> </Link> 
+              <Link to={`/login`}> <Button className="bp3-minimal" icon="user" text="Login"/> </Link> 
+              <Link to={`/register`}> <Button className="bp3-minimal" icon="id-number" text="Register"/> </Link> 
             </div>
         </Navbar.Group>
     </Navbar>

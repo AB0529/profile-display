@@ -8,7 +8,7 @@ function Error() {
     return (
         <React.Fragment>
             <h1>
-                Error nigga
+                Nonexistant path
             </h1>
         </React.Fragment>
     );
