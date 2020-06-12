@@ -42,7 +42,7 @@ class Register extends React.Component<IProps, IState> {
     }
 
     handle_submit = (e: FormEvent<HTMLFormElement>) => {
-        fetch(`https://vps.anishb.net/gamer_hideout/api/register`, {
+        fetch(`http://vps.anishb.net:3001/gamer_hideout/api/register`, {
             method: 'POST',
             body: JSON.stringify({username: this.state.username, password: this.state.password})
         }).then((resp: IResponse) => {
