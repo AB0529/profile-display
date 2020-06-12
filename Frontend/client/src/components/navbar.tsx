@@ -9,16 +9,16 @@ export default function nav() {
   return (
     <Navbar className="nav-color">
         <Navbar.Group align={Alignment.LEFT}>
-            <Navbar.Heading>Blueprint</Navbar.Heading>
-            <Navbar.Divider />
-            <Link to={`/`}> <Button className="bp3-minimal" icon="home" text="Home" /> </Link> 
-            <Link to={`/stuff`}> <Button className="bp3-minimal" icon="document" text="Files" /> </Link> 
+          <Navbar.Heading>Blueprint</Navbar.Heading>
+          <Navbar.Divider />
+          <Link to={`/`}> <Button className="bp3-minimal" icon="home" text="Home" /> </Link> 
+          <Link to={`/stuff`}> <Button className="bp3-minimal" icon="document" text="Files" /> </Link> 
+        </Navbar.Group>
 
-            <div className="right">
-              <Link to={`/login`}> <Button className="bp3-minimal" icon="user" text="Login"/> </Link> 
-              <Link to={`/register`}> <Button className="bp3-minimal" icon="id-number" text="Register"/> </Link> 
-              <DarkModeButton />
-            </div>
+        <Navbar.Group align={Alignment.RIGHT}>
+          <Link to={`/login`}> <Button className="bp3-minimal" icon="user" text="Login"/> </Link> 
+          <Link to={`/register`}> <Button className="bp3-minimal" icon="id-number" text="Register"/> </Link> 
+          <DarkModeButton />
         </Navbar.Group>
     </Navbar>
   );

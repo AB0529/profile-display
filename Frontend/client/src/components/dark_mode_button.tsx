@@ -27,7 +27,7 @@ class DarkModeButton extends React.Component<IProps, IState> {
         return (
             <div className={this.state.dark_mode ? 'bp3-dark' : 'bp3-light'}>
                 <AnchorButton className="floating-button" icon={this.state.dark_mode ? 'flash' : 'moon'} onClick={this.toggle_dark_mode}>
-                    {this.state.dark_mode ? 'Light Mode' : 'Dark Mode'}
+                    {/* {this.state.dark_mode ? 'Light Mode' : 'Dark Mode'} */}
                 </AnchorButton>
                 {this.state.dark_mode ? (
                     <Helmet>

@@ -7,7 +7,6 @@ import '../css/main.css';
 export default function Login() {
   return (
       <React.Fragment>
-            <DarkModeButton />
             <h1 className="center">
                 Hello
             </h1>
